@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Map</title>
+  <style>
+    /* 地図を表示するためのサイズ指定 */
+    #map {
+      margin-top: 80px;
+      height: 500px;
+      width: 100%;
+    }
+  </style>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+</head>
+<body>
+  <h1>Map</h1>
+  <div id="map"></div>
+
+  
+  <!-- MarkerClustererライブラリを読み込み -->
+  <script src="https://unpkg.com/@googlemaps/markerclustererplus@1.2.1/dist/index.min.js"></script>
+  
+  <!-- Google Maps API 読み込み -->
+  <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC627CoD9oEidIKSd5E-t7PDpVWeHOBrvY&callback=initMap"></script>
+
+  <!-- 外部JSファイルの読み込み -->
+  <script src="map530.js"></script>
+</body>
+</html>
